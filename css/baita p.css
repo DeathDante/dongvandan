@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+.titleText {
+	font-size: 30px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-family: "OptimusPrinceps";
+}
+
+.divBox {
+	width: 19%;
+	float: left;
+	padding-left: 0.83%;
+	margin-bottom: 25px;
+}
+
+.box {
+	width: 100%;
+	border: 3px solid dimgrey;
+	margin: 0;
+	font-family: "OptimusPrinceps";
+	text-align: center;
+}
+.box p {
+	font-size: 28px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+
+.leftColumn {
+	float: left;
+	width: calc(95vw - 380px);
+}
+.rightColumn {
+	float: right;
+	width: 300px;
+	border: 2px solid gray;
+	margin-bottom: 20px;
+}
+
+.rightColumn p {
+	text-align: center;
+	font-family: "OptimusPrinceps";
+	font-size: 24px;
+	color: cadetblue;
+	margin: 10px auto;
+}
+
+.infoTable {
+	border-collapse: collapse;
+	margin: 0 auto;
+	table-layout: fixed;
+	width: 100%;
+}
+.infoTable td {
+	text-align: left;
+	padding-left: 15%;
+	word-wrap: break-word;
+	vertical-align: center;
+	height: 35px;
+	width: 50%;
+}
+.infoTable tr:nth-child(even){
+	background: rgba(225, 225, 225, 0.1);
+}
+
+.attributeTable {
+	border-collapse: collapse;
+	width: 100%;
+  	border-spacing: 0;
+}
+
+.attributeTable td {
+	text-align: center;
+  	word-wrap: break-word;
+  	vertical-align: center;
+  	height: 35px;
+	border: 1px solid gray;
+	padding: 5px 10px;
+}
+
+.attributeInfo {
+	font-family: "OptimusPrinceps";
+	color: cadetblue;
+}
+
+.equipment {
+	width: 15.5%;
+	min-width: 70px;
+	display: inline-block;
+	text-align: center;
+}
+
+.equipment img {
+	max-width: 100%;
+	height: auto;
+}
+  
+@media screen and (max-width: 1000px) {
+	.leftColumn {
+		width: calc(95vw - 235px);
+	}
+	.rightColumn {
+		width: 175px;
+	}
+	.rightColumn p {
+		font-size: 18px;
+	}
+	.divBox {
+		width: 49%;
+		padding-left: 0.6%;
+	}
+	.box p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.leftColumn {
+		width: 100%;
+	}
+	.rightColumn {
+		width: 100%;
+	}
+	.equipment {
+		width: 23%;
+	}
+}
+
